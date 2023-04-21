@@ -238,7 +238,7 @@ nav a{
         right: 0;
     }
 }
-@media (max-width:769px){
+@media (max-width:768px){
     nav{
         flex-direction: column;
         justify-content: space-between;
