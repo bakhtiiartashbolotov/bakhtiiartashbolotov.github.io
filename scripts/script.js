@@ -1,4 +1,4 @@
-const techArray = ['laptop', 'headphones', 'phones'];
+const techArray = ['laptops', 'headphones', 'phones', 'watches', 'laptop', 'notebooke','headphone','phone','watch','clock'];
 
 form = document.querySelector('form');
 form.addEventListener('submit', event => {
