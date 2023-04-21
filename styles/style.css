@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: #0071DCFF;
+    color: white;
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+#logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 7.5rem;
+    line-height: 1.25rem;
+}
+#logo span{
+    color: #ffc220;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+form{
+    width: 40%;
+    position: relative;
+    
+}
+#error-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+#error-container h1{
+    font-size: 7vh;
+    font-family: 'Montserrat', sans-serif;
+}
+#error-container p{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 1rem;
+}
+#search_bar{
+    height: 40px;
+    width: 100%;
+    border-radius: 15px;
+    padding-left: 15px;
+    border: none;
+}
+#search_bar:focus{
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+#search_button{
+    cursor: pointer;
+    border: none;
+    background-color: #ffc220;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: 0.25rem;
+    top: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 100%;
+
+}
+#search_button i{
+    color: black;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 2rem;
+} 
+nav li {
+    margin-right: 1rem;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+#navbar a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem;
+    background-image: linear-gradient(white, white), linear-gradient(#0071DCFF, #0071DCFF);
+    background-size: 0 1px, auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: all .2s ease-out;
+}
+#navbar a:hover {
+    background-size: 100% 3px, auto;
+}
+.cart-toggle i{
+    color: #ffc220;
+    font-size: 1.3rem;
+    border: none;
+}
+.nav-toggle{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 41px;
+}
+.nav-toggle .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 10px;
+}
+#main-widgets{
+    width: 60%;
+    margin: 0 auto;
+    padding: 5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#main-widgets div{
+    width: 300px;
+    height: 300px;
+    margin-top: 2rem;
+    border: 1px solid black;
+    outline: 150px solid #70707099;
+    outline-offset: -150px;
+    transition: 0.3s;
+    aspect-ratio: 1;
+    position: relative;
+    border-radius: 10px;
+}
+#main-widgets div a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#main-widgets div:hover{
+    outline: 8px solid #ffc220;
+    outline-offset: 14px;
+}
+#main-widgets div h2{
+    text-align: center;
+    margin-top: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    z-index: 999;
+}
+#main-widgets span{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    margin-top: 1vh;
+    text-align: center;
+}
+#tech-container{
+    background-image: url(../images/2.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#fasion-container{
+    background-image: url(../images/fashion.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#auto-container{
+    background-image: url(../images/auto.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#jewelery-container{
+    background-image: url(../images/jew.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#food-container{
+    background-image: url(../images/av.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#sport-container{
+    background-image: url(../images/ball.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#cart-aside {
+    display: none;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    position: fixed;
+    top: 71px;
+    right: 0;
+    width: 20rem;
+    height: 100%;
+    box-shadow: -5px 0 5px -5px #333;
+}
+#cart-aside.active {
+    display: block;
+    animation: menuOpen 1s;
+}
+#cart-aside ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#cart li {
+    margin-bottom: 10px;
+}
+#total {
+    font-weight: bold;
+}
+@keyframes menuOpen {
+    from {
+        right: -700px;
+    }
+    to {
+        right: 0;
+    }
+}
