@@ -69,6 +69,7 @@
                         <button onclick="addToCart('Jlab Audio Go Air', 29.88)">Add to Cart</button>
                     </div>
                     <div class="item">
+                        
                         <h3>OneOdio Wired Over-Ear Headphones</h3>
                         <img src="images/hp5.webp" alt="OneOdio Wired Over-Ear Headphones" width="150px">
                         <p>Mic-Noise Cancelling Earcups & Dual Ports for Studio Home Office Online Meeting-Dark Blue</p>
@@ -85,6 +86,7 @@
         </section>
     </main>
     <aside id="cart-aside">
+        <button class="cart-toggle"><i class="fa fa-close"></i></button>
         <h2>Shopping Cart</h2>
         <ul id="cart">
             <li>No items in cart</li>
@@ -95,6 +97,10 @@
     <script>
         $('.cart-toggle').on('click', function() {
             $('#cart-aside').toggleClass('active');
+        });
+        $('.nav-toggle').on('click', function() {
+            $('#navbar').toggleClass('active');
+            $("#navbar").stop().slideToggle("500");
         });
     </script>
     <script src="scripts/script.js"></script>
