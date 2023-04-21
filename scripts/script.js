@@ -1,8 +1,17 @@
-const form = document.querySelector('form');
+const techArray = ['laptop', 'headphones', 'phones'];
+
+form = document.querySelector('form');
 form.addEventListener('submit', event => {
     event.preventDefault();
-    const query = form.elements.query.value;
-    const url = `${query}.html`;
+    const query = form.elements.query.value.toLowerCase();
+    let url;
+
+    if (techArray.includes(query)) {
+        url = 'tech.html';
+    } else {
+        url = `${query}.html`;
+    }
+
     fetch(url)
         .then(response => {
             if (response.ok) {
