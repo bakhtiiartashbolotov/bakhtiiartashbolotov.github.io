@@ -45,28 +45,28 @@
                         <img src="images/hp1.webp" alt="Bose Noise Cancelling Headphones 700" width="150px">
                         <p>Over-Ear Wireless Bluetooth Earphones, Black</p>
                         <p>Price: $379.00</p>
-                        <button onclick="addToCart('Bose Noise Cancelling Headphones 700', 379.00)">Add to Cart</button>
+                        <button onclick="addToCart('Bose Noise Cancelling Headphones 700', 379.00)"><i class="fa fa-plus"></i> Add to Cart</button>
                     </div>
                     <div class="item">
                         <h3>Bose QuietComfort 45</h3>
                         <img src="images/hp2.webp" alt="Bose QuietComfort 45" width="150px">
                         <p>Headphones Noise Cancelling Over-Ear Wireless Bluetooth Earphones, Black</p>
                         <p>Price: $329.00</p>
-                        <button onclick="addToCart('Bose QuietComfort 45', 329.00)">Add to Cart</button>
+                        <button onclick="addToCart('Bose QuietComfort 45', 329.00)"><i class="fa fa-plus"></i> Add to Cart</button>
                     </div>
                     <div class="item">
                         <h3>Bose QuietComfort Earbuds</h3>
                         <img src="images/hp3.webp" alt="Bose QuietComfort Earbuds" width="150px">
                         <p>Noise Cancelling True Wireless Bluetooth Headphones</p>
                         <p>Price: $199.00</p>
-                        <button onclick="addToCart('Bose QuietComfort Earbuds', 199.00)">Add to Cart</button>
+                        <button onclick="addToCart('Bose QuietComfort Earbuds', 199.00)"><i class="fa fa-plus"></i> Add to Cart</button>
                     </div>
                     <div class="item">
                         <h3>Jlab Audio Go Air</h3>
                         <img src="images/hp4.webp" alt="Jlab Audio Go Air" width="150px">
                         <p>Sport True Wireless Earbuds</p>
                         <p>Price: $29.88</p>
-                        <button onclick="addToCart('Jlab Audio Go Air', 29.88)">Add to Cart</button>
+                        <button onclick="addToCart('Jlab Audio Go Air', 29.88)"><i class="fa fa-plus"></i> Add to Cart</button>
                     </div>
                     <div class="item">
                         
@@ -74,7 +74,7 @@
                         <img src="images/hp5.webp" alt="OneOdio Wired Over-Ear Headphones" width="150px">
                         <p>Mic-Noise Cancelling Earcups & Dual Ports for Studio Home Office Online Meeting-Dark Blue</p>
                         <p>Price: $35.99</p>
-                        <button onclick="addToCart('OneOdio Wired Over-Ear Headphones', 35.99)">Add to Cart</button>
+                        <button onclick="addToCart('OneOdio Wired Over-Ear Headphones', 35.99)"><i class="fa fa-plus"></i> Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -84,16 +84,16 @@
             <div class="watches"></div>
             <div class="phones"></div>
         </section>
+        <aside id="cart-aside">
+            <button class="cart-toggle"><i class="fa fa-close"></i></button>
+            <h2>Shopping Cart</h2>
+            <ul id="cart">
+                <li>No items in cart</li>
+            </ul>
+            <p>Total: $<span id="total">0</span></p>
+            <button onclick="checkout()" class="checkout-button">Checkout</button>
+        </aside>
     </main>
-    <aside id="cart-aside">
-        <button class="cart-toggle"><i class="fa fa-close"></i></button>
-        <h2>Shopping Cart</h2>
-        <ul id="cart">
-            <li>No items in cart</li>
-        </ul>
-        <p>Total: $<span id="total">0</span></p>
-        <button onclick="checkout()">Checkout</button>
-    </aside>
     <script>
         $('.cart-toggle').on('click', function() {
             $('#cart-aside').toggleClass('active');

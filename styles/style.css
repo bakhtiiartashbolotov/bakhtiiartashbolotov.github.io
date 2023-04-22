@@ -5,11 +5,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: #E6F1FCFF;
+}
 header {
     background-color: #0071DCFF;
     color: white;
     padding: 1rem;
     font-family: 'Montserrat', sans-serif;
+    position: relative;
 }
 #logo {
     font-size: 1.5rem;
@@ -140,6 +144,7 @@ nav a{
     aspect-ratio: 1;
     position: relative;
     border-radius: 10px;
+    background-color: white;
 }
 #main-widgets div a{
     width: 100%;
@@ -202,7 +207,7 @@ nav a{
     color: #333;
     padding: 20px;
     position: fixed;
-    top: 71px;
+    top: 72px;
     right: 0;
     width: 20rem;
     height: 100%;
@@ -217,6 +222,23 @@ nav a{
     list-style: none;
     margin: 0;
     padding: 0;
+}
+#cart-aside .checkout-button{
+    margin-top: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    width: auto;
+    font-size: .875rem;
+    height: 2rem;
+    border-radius: 62.5rem;
+    padding: 0.25rem 1rem;
+    color: #46474a;
+}
+#cart-aside .checkout-button:hover{
+    border: 3px solid black;
+}
+#cart-aside .checkout-button:active{
+    background-color: black;
+    color: white;
 }
 button.cart-remove{
     border: none;
