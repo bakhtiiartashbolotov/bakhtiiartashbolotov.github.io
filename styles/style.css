@@ -8,16 +8,16 @@
 ::-webkit-scrollbar {
     width: 10px;
     height: 8px;
-    background-color: #E6F1FCFF;
+    background-color: #fffffe;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #0071DCFF;
+    background-color: #3da9fc;
 }
 body{
-    background-color: #E6F1FCFF;
+    background-color: #fffffe;
 }
 header {
-    background-color: #0071DCFF;
+    background-color: #3da9fc;
     color: white;
     padding: 1rem;
     font-family: 'Montserrat', sans-serif;
@@ -42,6 +42,15 @@ form{
     width: 40%;
     position: relative;
     
+}
+main{
+    padding-top: 3rem;
+}
+h1{
+    text-align: center;
+    color: #094067;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 7vh;
 }
 #error-container{
     display: flex;
@@ -84,9 +93,11 @@ form{
     border-radius: 100%;
 
 }
-#search_button i{
-    color: black;
+#search_button:hover{
+    background-color: #3da9fc;
+    color: #fffffe;
 }
+
 nav ul {
     list-style: none;
     display: flex;
@@ -95,7 +106,7 @@ nav ul {
 } 
 nav li {
     margin-right: 1rem;
-    background-image: linear-gradient(white, white), linear-gradient(#0071DCFF, #0071DCFF);
+    background-image: linear-gradient(#fffffe, #fffffe), linear-gradient(#3da9fc, #3da9fc);
     background-size: 0 1px, auto;
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -120,6 +131,9 @@ nav a{
     font-size: 1.3rem;
     border: none;
 }
+.cart-toggle:hover i{
+    color: #fffffe;
+}
 .nav-toggle{
     display: none;
     flex-direction: column;
@@ -136,7 +150,7 @@ nav a{
 }
 #main-widgets{
     margin: 0 auto;
-    padding: 5rem;
+    padding: 2rem 4rem;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -160,18 +174,11 @@ nav a{
     position: absolute;
 }
 #main-widgets div:hover{
-    outline: 8px solid #ffc220;
+    outline: 8px solid #3da9fc;
     outline-offset: 14px;
 }
-#main-widgets div h2{
-    text-align: center;
-    margin-top: 2rem;
-    font-family: 'Montserrat', sans-serif;
-    color:white;
-    z-index: 999;
-}
 #main-widgets span{
-    color: black;
+    color: #5f6c7b;
     font-family: 'Montserrat', sans-serif;
     display: block;
     margin-top: 1vh;
@@ -211,8 +218,8 @@ nav a{
 #cart-aside {
     display: none;
     font-family: 'Montserrat', sans-serif;
-    background-color: #fff;
-    color: #333;
+    background-color: #fffffe;
+    color: #5f6c7b;
     padding: 20px;
     position: fixed;
     top: 72px;
@@ -237,12 +244,14 @@ nav a{
     width: auto;
     font-size: .875rem;
     height: 2rem;
+    background-color: #3da9fc;
     border-radius: 62.5rem;
     padding: 0.25rem 1rem;
-    color: #46474a;
+    color: #fffffe;
+    border: 1px solid #90b4ce;
 }
 #cart-aside .checkout-button:hover{
-    border: 3px solid black;
+    border: 3px solid #90b4ce;
 }
 #cart-aside .checkout-button:active{
     background-color: black;
@@ -251,7 +260,7 @@ nav a{
 button.cart-remove{
     border: none;
     background-color: transparent;
-    color: black;
+    color: #ef4565;
     font-size: 1.2em;
     margin-left: 0.5rem;
 }
