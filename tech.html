@@ -34,11 +34,19 @@
                 <li><a href="#" class="cart-toggle"><i class="fa fa-shopping-cart"></i> Cart</a></li>
             </ul>
         </nav>
+        <div class="navigation">
+            <ul>
+                <li><a href="#headphones">Headphones</a></li>
+                <li><a href="#laptops">Laptops</a></li>
+                <li><a href="#watches">Watches</a></li>
+                <li><a href="#phones">Phones</a></li>
+            </ul>
+        </div>
     </header>
     <main>
         <h1>Electonics</h1>
         <section>
-            <div class="headphones">
+            <div id="headphones">
                 <h2>Headphones</h2>
                 <div class="items">
                     <div class="item">
@@ -70,7 +78,6 @@
                         <button onclick="addToCart('Jlab Audio Go Air', 29.88)"><i class="fa fa-plus"></i> Add to Cart</button>
                     </div>
                     <div class="item">
-                        
                         <h3>OneOdio Wired Over-Ear Headphones</h3>
                         <img src="images/hp5.webp" alt="OneOdio Wired Over-Ear Headphones" width="150px">
                         <p>Mic-Noise Cancelling Earcups & Dual Ports for Studio Home Office Online Meeting-Dark Blue</p>
@@ -79,11 +86,53 @@
                     </div>
                 </div>
             </div>
-            <div class="laptops">
+            <div id="laptops">
+                <h2>Laptops</h2>
+                    <div class="items">
+                    <div class="item">
+                        <h3>HP 15.6" Laptop</h3>
+                        <img src="https://i5.walmartimages.com/asr/fb7a3275-2b04-4757-94d4-cca778dfe610_1.130d8cd7964d00f215a80ab6a614f388.jpeg?odnHeight=784&odnWidth=580&odnBg=FFFFFF" alt='HP 15.6" Laptop'>
+                        <p>Intel Pentium Silver N5000, 4GB RAM, 128GB SSD, Windows 10 Home with Office , Scarlet Red, 15-dw0083wm</p>
+                        <p>Price: <span>$249.00</span></p>
+                        <button onclick="addToCart('HP 15.6 Laptop', 249.00)"><i class="fa fa-plus"></i> Add to Cart</button>
+                    </div>
+                    <div class="item">
+                        <h3>Acer Chromebook 315</h3>
+                        <img src="images/laptop2webp.webp" alt="Acer Chromebook 315">
+                        <p>15.6" HD, Intel Celeron N4000, 4GB LPDDR4, Pure Silver, Chrome OS, CB315-3H-C19A</p>
+                        <p>Price:<span>$199.00</span></p>
+                        <button onclick="addToCart('Acer Chromebook 315', 199.00)"><i class="fa fa-plus"></i> Add to Cart</button>
+                    </div>
+                    <div class="item">
+                        <h3>KUU Yepbook 15.6'' Laptop</h3>
+                        <img src="images/lap3.jpeg" alt="KUU Yepbook 15.6'' Laptop">
+                        <p>Intel Celeron, 16GB RAM, 512GB SSD, Windows 11 Pro, Backlit Keyboard, WiFi & Bluetooth - Silver</p>
+                        <p>Price:<span>$339.00
+                        </span></p>
+                        <button onclick="addToCart('KUU Yepbook 15.6 Laptop', 339.00
+                        )"><i class="fa fa-plus"></i> Add to Cart</button>
+                    </div>
+                    <div class="item">
+                        <h3>MSI Katana GF76 Gaming Laptop</h3>
+                        <img src="images/lap4.webp" alt="MSI Katana GF76 Gaming Laptop">
+                        <p>17.3" FHD, Intel Core i7-11800H, NVIDIA GeForce RTX 3050 Ti, 16GB RAM, 512GB NVMe SSD, Black, Windows 10, 11UD-001</p>
+                        <p>Price:<span>$1,049.00
+                        </span></p>
+                        <button onclick="addToCart('MSI Katana GF76 Gaming Laptop', 1049.00)"><i class="fa fa-plus"></i> Add to Cart</button>
+                    </div>
+                    <div class="item">
+                        <h3>ASUS VivoBook Go 14 Flip</h3>
+                        <img src="images/lap5webp.webp" alt="ASUS VivoBook Go 14 Flip">
+                        <p>Thin and Light 2-in-1 Laptop, 14” HD Touch, Intel Celeron N4500 CPU, UHD Graphics, 4GB RAM, 64GB eMMC, NumberPad, Windows 11 Home in S mode, Quiet Blue, J1400KA-DS02T</p>
+                        <p>Price:<span>$335.99</span></p>
+                        <button onclick="addToCart('ASUS VivoBook Go 14 Flip', 335.99)"><i class="fa fa-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div id="watches">
                 
             </div>
-            <div class="watches"></div>
-            <div class="phones"></div>
+            <div id="phones"></div>
         </section>
         <aside id="cart-aside">
             <button class="cart-toggle"><i class="fa fa-close"></i></button>
