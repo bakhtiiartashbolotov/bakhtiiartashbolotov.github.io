@@ -50,7 +50,7 @@ h1{
     text-align: center;
     color: #094067;
     font-family: 'Montserrat', sans-serif;
-    font-size: 7vh;
+    font-size: 3rem;
 }
 #error-container{
     display: flex;
@@ -341,9 +341,6 @@ button.cart-remove{
         text-align: center;
         width: 100%;
     }
-    #main-widgets{
-        padding-top: 10rem;
-    }
     #cart-aside{
         top: 0;
     }
@@ -355,5 +352,8 @@ button.cart-remove{
     }
     #cart-aside .cart-toggle i{
         color: black;
+    }
+    h1{
+        font-size: 2rem;
     }
 }

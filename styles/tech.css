@@ -43,6 +43,7 @@ section h2{
     list-style: none;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .navigation a{
     padding: 0.5rem;
@@ -105,6 +106,11 @@ section h2{
 @media (max-width:769px){
     .navigation{
         display: block;
+        flex-wrap: wrap;
+    }
+    .navigation li{
+        display: block;
+        line-height: 2rem;
     }
     .items{
         align-items: center;
