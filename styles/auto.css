@@ -12,27 +12,13 @@ section h2{
     text-align: center;
     color: #90b4ce;
 }
-#headphones{
+#mens-clothing{
     padding: 1rem;
     border-radius: 10px;
     background-color: #094067;
     box-shadow: 0px 0px 39px 11px rgba(34, 60, 80, 0.2);
 }
-#laptops{
-    margin-top: 3rem;
-    padding: 1rem;
-    border-radius: 10px;
-    background-color: #094067;
-    box-shadow: 0px 0px 39px 11px rgba(34, 60, 80, 0.2);
-}
-#watches{
-    margin-top: 3rem;
-    padding: 1rem;
-    border-radius: 10px;
-    background-color: #094067;
-    box-shadow: 0px 0px 39px 11px rgba(34, 60, 80, 0.2);
-}
-#phones{
+#womens-clothing{
     margin-top: 3rem;
     padding: 1rem;
     border-radius: 10px;

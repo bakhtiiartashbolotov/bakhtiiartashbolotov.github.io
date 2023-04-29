@@ -1,4 +1,6 @@
-const techArray = ['laptops', 'headphones', 'phones', 'watches', 'laptop', 'notebook','headphone','phone','watch','clock','computer','pc','computers'];
+const techArray = ['laptops', 'headphones', 'phones', 'watches', 'laptop', 'notebook', 'headphone', 'phone', 'watch', 'clock', 'computer', 'pc', 'computers'];
+const fashionArray = ['fashion','mens clothing', 'womens clothing', 'clothing', 'clothes', 'pants', 'shirt', 'leggins', 'polo', 'cardigan'];
+const autoArray = ['oil', 'car', 'auto', 'wheel', 'oil', 'wheels', 'for auto', 'for car', 'all-terrain', 'castrol', 'valvoline', 'shell rotella']
 
 form = document.querySelector('form');
 form.addEventListener('submit', event => {
@@ -8,6 +10,10 @@ form.addEventListener('submit', event => {
 
     if (techArray.includes(query)) {
         url = 'tech.html';
+    } else if (fashionArray.includes(query)) {
+        url = 'fashion.html';
+    } else if (autoArray.includes(query)) {
+        url = 'auto.html';
     } else {
         url = `${query}.html`;
     }

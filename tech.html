@@ -26,12 +26,11 @@
                 <button type="submit" id="search_button"><i class="fa fa-search"></i></button>
             </form>
             <ul id="navbar">
-                <li><a href="#">Tech</a></li>
-                <li><a href="#">Fashion</a></li>
-                <li><a href="#">Auto</a></li>
-                <li><a href="#">Jewelry</a></li>
-                <li><a href="#">Food</a></li>
-                <li><a href="#">Sport</a></li>
+                <li><a href="tech.html">Tech</a></li>
+                <li><a href="fashion.html">Fashion</a></li>
+                <li><a href="auto.html">Auto</a></li>
+                <li><a href="jewelry.html">Jewelry</a></li>
+                <li><a href="food.html">Food</a></li>
                 <li><a href="#" class="cart-toggle"><i class="fa fa-shopping-cart"></i> Cart</a></li>
             </ul>
         </nav>
@@ -89,7 +88,7 @@
             </div>
             <div id="laptops">
                 <h2>Laptops</h2>
-                    <div class="items">
+                <div class="items">
                     <div class="item">
                         <h3>HP 15.6" Laptop</h3>
                         <img src="https://i5.walmartimages.com/asr/fb7a3275-2b04-4757-94d4-cca778dfe610_1.130d8cd7964d00f215a80ab6a614f388.jpeg?odnHeight=784&odnWidth=580&odnBg=FFFFFF" alt='HP 15.6" Laptop'>
@@ -131,9 +130,71 @@
                 </div>
             </div>
             <div id="watches">
-                
+                <h2>Watches</h2>
+                <div class="items">
+                    <div class="item">
+                        <h3>Invicta Pro Diver</h3>
+                        <img src="images/w1.webp" alt="Invicta Pro Diver">
+                        <p>Chronograph Blue Dial Black Rubber Men's Watch 6983</p>
+                        <p>Price:<span>$72.25</span></p>
+                        <button onclick="addToCart('Invicta Pro Diver', 72.25)"><i class="fa fa-plus"></i> Add to Cart</button>
+                    </div>
+                    <div class="item">
+                        <h3>Movado</h3>
+                        <img src="images/w2.webp" alt="Movado">
+                        <p>Men's Bold Large Sunray Dial Analog Quartz 44mm Watch 3600261</p>
+                        <p>Price:<span>$280.02</span></p>
+                        <button onclick="addToCart('Movado', 280.02)"><i class="fa fa-plus"></i> Add to Cart</button>
+                    </div>
+                    <div class="item">
+                        <h3>Apple Watch SE (1st Gen)</h3>
+                        <img src="images/w3.webp" alt="Apple Watch SE (1st Gen)">
+                        <p>GPS + Cellular, 40mm Silver Aluminum Case with Deep Navy Sport Loop</p>
+                        <p>Price:<span>$329.00</span></p>
+                        <button onclick="addToCart('Apple Watch SE', 329.00)"><i class="fa fa-plus"></i> Add to Cart</button>
+                    </div>
+                    <div class="item">
+                        <h3>Pre-Owned Rolex 6917</h3>
+                        <img src="images/w4.webp" alt="Pre-Owned Rolex 6917">
+                        <p>Ladies 26mm Adult Female Datejust Wristwatch Black Diamond (3 Year Warranty)</p>
+                        <p>Price:<span>$4,800.00</span></p>
+                        <button onclick="addToCart('Pre-Owned Rolex 6917', 4800.00)"><i class="fa fa-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
             </div>
-            <div id="phones"></div>
+            <div id="phones">
+                <h2>Phones</h2>
+                <div class="items">
+                    <div class="item">
+                        <h3>SAMSUNG Galaxy S10E</h3>
+                        <img src="images/p1.webp" alt="SAMSUNG Galaxy S10E">
+                        <p>Verizon + GSM Unlocked 128GB Prism, Black</p>
+                        <p>Price:<span>$117.49</span></p>
+                        <button onclick="addToCart('SAMSUNG Galaxy S10E', 117.49)"><i class="fa fa-plus"></i> Add to Cart</button>
+                    </div>
+                    <div class="item">
+                        <h3>Samsung Galaxy S20 FE</h3>
+                        <img src="images/p2.webp" alt="Samsung Galaxy S20 FE">
+                        <p>5G 128GB SM-G781U</p>
+                        <p>Price:<span>$209.99</span></p>
+                        <button onclick="addToCart('Samsung Galaxy S20 FE', 209.99)"><i class="fa fa-plus"></i> Add to Cart</button>
+                    </div>
+                    <div class="item">
+                        <h3>Samsung Galaxy Z Flip3</h3>
+                        <img src="images/p3.webp" alt="Samsung Galaxy Z Flip3">
+                        <p>5G, Black, 128GB</p>
+                        <p>Price:<span>$1,050.00</span></p>
+                        <button onclick="addToCart('Samsung Galaxy Z Flip3', 1050.00)"><i class="fa fa-plus"></i> Add to Cart</button>
+                    </div>
+                    <div class="item">
+                        <h3>Apple iPhone 14 Pro Max</h3>
+                        <img src="images/p4.webp" alt="Apple iPhone 14 Pro Max">
+                        <p>128GB, Silver</p>
+                        <p>Price:<span>$1,099.00</span></p>
+                        <button onclick="addToCart('Apple iPhone 14 Pro Max', 1099.00)"><i class="fa fa-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
         </section>
         <aside id="cart-aside">
             <button class="cart-toggle"><i class="fa fa-close"></i></button>
@@ -145,6 +206,15 @@
             <button onclick="checkout()" class="checkout-button">Checkout</button>
         </aside>
     </main>
+    <footer>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <ul>
+              <li>Phone number: <a href="tel:+996701250220"> +996 701 250 220</a></li>
+              <li>Email: <a href="mailto:bakhtiiar.tasholotov@alatoo.edu.kg">bakhtiiar.tasholotov@alatoo.edu.kg</a></li>
+            </ul>
+          </section>
+    </footer>
     <script>
         $('.cart-toggle').on('click', function() {
             $('#cart-aside').toggleClass('active');

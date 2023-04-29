@@ -13,8 +13,15 @@
 ::-webkit-scrollbar-thumb {
     background-color: #3da9fc;
 }
+html{
+    height: 100%;
+}
 body{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
     background-color: #fffffe;
+    height: 100%;
 }
 header {
     background-color: #3da9fc;
@@ -45,6 +52,7 @@ form{
 }
 main{
     padding-top: 3rem;
+    flex: 1;
 }
 h1{
     text-align: center;
@@ -154,6 +162,7 @@ nav a{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-bottom: 2rem;
 }
 #main-widgets div{
     width: 300px;
@@ -207,12 +216,6 @@ nav a{
 #food-container{
     background-image: url(../images/av.webp);
     background-size: 100%;
-    background-repeat: no-repeat;
-}
-#sport-container{
-    background-image: url(../images/ball.jpg);
-    background-size: 100%;
-    background-position: center;
     background-repeat: no-repeat;
 }
 #cart-aside {
@@ -274,6 +277,36 @@ button.cart-remove{
     display: none;
     text-align: center;
     vertical-align: middle;
+}
+footer{
+    margin-top: auto;
+    width: 100%;
+    font-family: "Noto Sans", sans-serif;
+    color: #fffffe;
+    background-color:  #3da9fc;
+}
+#contact{
+    padding: 3rem 0;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+#contact ul {
+    margin-top: 1rem    ;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+#contact h2{
+    text-align: left;
+    color: #fffffe;
+}
+#contact li{
+    font-family: Arial, sans-serif;
+}
+#contact a{
+    font-family: Arial, sans-serif;
+    color: #333;
 }
 @keyframes menuOpen {
     from {
