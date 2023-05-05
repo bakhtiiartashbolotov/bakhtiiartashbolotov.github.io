@@ -224,6 +224,7 @@ nav a{
     background-color: #fffffe;
     color: #5f6c7b;
     padding: 20px;
+    padding-bottom: 5rem;
     position: fixed;
     top: 72px;
     right: 0;
@@ -231,6 +232,7 @@ nav a{
     height: 100%;
     box-shadow: -5px 0 5px -5px #333;
     z-index: 9999;
+    overflow-y: scroll;
 }
 #cart-aside.active {
     display: block;

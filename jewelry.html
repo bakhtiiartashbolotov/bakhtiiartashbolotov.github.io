@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop | Tech</title>
+    <link rel="icon" type="images/x-icon" href="images/logo.png">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/jewelry.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" id="logo">ONLINE <span>SHOP</span></a>
+            <a href="#" class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <form>
+                <input type="search" id="search_bar" name="query" placeholder="Search...">
+                <button type="submit" id="search_button"><i class="fa fa-search"></i></button>
+            </form>
+            <ul id="navbar">
+                <li><a href="tech.html">Tech</a></li>
+                <li><a href="fashion.html">Fashion</a></li>
+                <li><a href="auto.html">Auto</a></li>
+                <li><a href="jewelry.html">Jewelry</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="#" class="cart-toggle"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+            </ul>
+        </nav>
+        <div class="navigation">
+            <ul>
+                <li><a href="#necklaces">Necklaces</a></li>
+                <li><a href="#rings">Rings</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <h1>Jewelry</h1>
+        <section>
+            <div id="necklaces">
+                <h2>Necklaces</h2>
+                <div class="items">
+                    <div class="item">
+                        <h3>14k Solid Gold Yellow or White</h3>
+                        <img src="images/jew1.webp" alt="14k Solid Gold Ice Chain Necklace" width="150px">
+                        <p>14k Solid Gold Yellow or White 1.3mm Ice Chain Necklace with Lobster Claw Clasp- 16" 18" 20"</p>
+                        <p>Price: <span>$222.83</span></p>
+                        <button onclick="addToCart('Ice Chain Necklace', 222.83)"><i class="fa fa-plus"></i> Add to Cart</button>
+                    </div>
+                    <div class="item">
+                        <h3>Angel Love You To The Moon Pendant Necklace</h3>
+                        <img src="images/jew2.webp" alt="Angel Love You To The Moon Pendant Necklace" width="150px">
+                        <p>Angel Love You To The Moon Pendant Necklace Sterling Silver Ginger Lyne</p>
+                        <p>Price: <span>$25.99</span></p>
+                        <button onclick="addToCart('Angel Love You To The Moon Pendant Necklace', 25.99)"><i class="fa fa-plus"></i> Add to Cart</button>
+                    </div>
+                    <div class="item">
+                        <h3>11MM Gold Chain 14K Miami Cuban link Curb Necklace</h3>
+                        <img src="images/jew3.webp" alt="11MM Gold Chain 14K Miami Cuban link Curb Necklace" width="150px">
+                        <p>11MM Gold Chain 14K Miami Cuban link Curb Necklace for Men Boys Fathers Husband Perfect gift Hip Hop Rappere</p>
+                        <p>Price: <span>$110.00</span></p>
+                        <button onclick="addToCart('11MM Gold Chain 14K Miami Cuban link Curb Necklace', 110.00)"><i class="fa fa-plus"></i> Add to Cart</button>
+                    </div>
+                    <div class="item">
+                        <h3>Solitaire 1.25 Carat Round Cut Halo Pendant Necklace</h3>
+                        <img src="images/jew4.webp" alt="Solitaire 1.25 Carat Round Cut Halo Pendant Necklace" width="150px">
+                        <p>Solitaire 1.25 Carat Round Cut Halo Pendant Necklace 18k White Gold over Silver, Adult, Female</p>
+                        <p>Price: <span>$499.00</span></p>
+                        <button onclick="addToCart('Solitaire 1.25 Carat Round Cut Halo Pendant Necklace', 499.00)"><i class="fa fa-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div id="rings">
+                <h2>Rings</h2>
+                <div class="items">
+                    <div class="item">
+                        <h3>Ross-Simons 2.00 Carat CZ Solitaire Ring</h3>
+                        <img src="images/ring1.webp" alt='Ross-Simons 2.00 Carat CZ Solitaire Ring'>
+                        <p>Ross-Simons 2.00 Carat CZ Solitaire Ring in 14kt Yellow Gold for Female, Adult</p>
+                        <p>Price: <span>$359.10</span></p>
+                        <button onclick="addToCart('Ross-Simons 2.00 Carat CZ Solitaire Ring', 359.10)"><i class="fa fa-plus"></i> Add to Cart</button>
+                    </div>
+                    <div class="item">
+                        <h3>Miabella Womens Ring</h3>
+                        <img src="images/ring2.webp" alt='Miabella Womens Ring'>
+                        <p>Miabella Women's 1 Carat T.G.W. Created White Sapphire and 1/10 Carat T.W. Diamond Infinity Engagement Ring in 10kt White Gold</p>
+                        <p>Price: <span>$354.99</span></p>
+                        <button onclick="addToCart('Miabella Womens Ring', 354.99)"><i class="fa fa-plus"></i> Add to Cart</button>
+                    </div>
+                    <div class="item">
+                        <h3>1 Carat Solitaire Wedding Engagement Ring</h3>
+                        <img src="images/ring3.jpeg" alt='1 Carat Solitaire Wedding Engagement Ring'>
+                        <p>1 Carat Solitaire Wedding Engagement Ring Set 14K Gold Over Sterling Silver Size 7</p>
+                        <p>Price: <span>$49.99</span></p>
+                        <button onclick="addToCart('1 Carat Solitaire Wedding Engagement Ring', 49.99)"><i class="fa fa-plus"></i> Add to Cart</button>
+                    </div>
+                    <div class="item">
+                        <h3>Wedding White Gold Ring</h3>
+                        <img src="images/ring4.webp" alt='Wedding White Gold Ringg'>
+                        <p>Pompeii3 Women's 1 1/10ct Cushion Halo Solitaire Diamond Engagement Wedding White Gold Ring Set</p>
+                        <p>Price: <span>$599.99</span></p>
+                        <button onclick="addToCart('Wedding White Gold Ring', 599.99)"><i class="fa fa-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <aside id="cart-aside">
+            <button class="cart-toggle"><i class="fa fa-close"></i></button>
+            <h2>Shopping Cart</h2>
+            <ul id="cart">
+                <li>No items in cart</li>
+            </ul>
+            <p>Total: $<span id="total">0</span></p>
+            <button onclick="checkout()" class="checkout-button">Checkout</button>
+        </aside>
+    </main>
+    <footer>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <ul>
+              <li>Phone number: <a href="tel:+996701250220"> +996 701 250 220</a></li>
+              <li>Email: <a href="mailto:bakhtiiar.tasholotov@alatoo.edu.kg">bakhtiiar.tasholotov@alatoo.edu.kg</a></li>
+            </ul>
+          </section>
+    </footer>
+    <script>
+        $('.cart-toggle').on('click', function() {
+            $('#cart-aside').toggleClass('active');
+        });
+        $('.nav-toggle').on('click', function() {
+            $('#navbar').toggleClass('active');
+            $("#navbar").stop().slideToggle("500");
+        });
+    </script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/cart.js">
+        window.onload = loadCart;
+    </script>
+</body>
+</html>

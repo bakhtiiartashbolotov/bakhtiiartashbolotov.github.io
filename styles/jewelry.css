@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+section{
+    width: 100%;
+    margin: 0 auto;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+section h2{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #90b4ce;
+}
+#necklaces{
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #094067;
+    box-shadow: 0px 0px 39px 11px rgba(34, 60, 80, 0.2);
+}
+#rings{
+    margin-top: 3rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #094067;
+    box-shadow: 0px 0px 39px 11px rgba(34, 60, 80, 0.2);
+}
+.items{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.navigation{
+    width: 100%;
+    border-top: 1px solid #fffffe;
+    margin-top: 1rem;
+    display: none;
+    padding: 0.5rem 0;
+
+}
+.navigation ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.navigation a{
+    padding: 0.5rem;
+    color: #fffffe;
+    text-decoration: none;
+}
+.item{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #fffffe;
+}
+.item h3{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #5f6c7b;
+}
+.item img{
+    margin: 0 auto;
+    width: 100%;
+}
+.item p{
+    font-family: 'Montserrat', sans-serif;
+    color: #5f6c7b;
+}
+.item span{
+    color: #094067;
+}
+.item button{
+    font-family: 'Montserrat', sans-serif;
+    width: auto;
+    font-size: .875rem;
+    border-radius: 62.5rem;
+    padding: 0.25rem 1rem;
+    background-color: #3da9fc;
+    color: #fffffe;
+}
+.item button:hover{
+    border: 3px solid #90b4ce;
+}
+.item button:active{
+    color: #ef4565;
+}
+@media (max-width:1200px){
+    .items{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:950px) {
+    .item{
+        width: 40%;
+        text-align: center;
+    }
+}
+@media (max-width:769px){
+    .navigation{
+        display: block;
+        flex-wrap: wrap;
+    }
+    .navigation li{
+        display: block;
+        line-height: 2rem;
+    }
+    .items{
+        align-items: center;
+    }
+    section{
+        padding: 0;
+        padding-top: 5rem;
+        width: 100%;
+    }
+}
+@media (max-width:480px) {
+    
+    .items{
+        flex-direction: column;
+    }
+    .item{
+        width: auto;
+    }
+}
