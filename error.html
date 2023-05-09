@@ -24,12 +24,11 @@
                 <button type="submit" id="search_button"><i class="fa fa-search"></i></button>
             </form>
             <ul id="navbar">
-                <li><a href="#">Tech</a></li>
-                <li><a href="#">Fashion</a></li>
-                <li><a href="#">Auto</a></li>
-                <li><a href="#">Jewelry</a></li>
-                <li><a href="#">Food</a></li>
-                <li><a href="#">Sport</a></li>
+                <li><a href="tech.html">Tech</a></li>
+                <li><a href="fashion.html">Fashion</a></li>
+                <li><a href="auto.html">Auto</a></li>
+                <li><a href="jewelry.html">Jewelry</a></li>
+                <li><a href="food.html">Food</a></li>
                 <li><a href="#" class="cart-toggle"><i class="fa fa-shopping-cart"></i> Cart</a></li>
             </ul>
         </nav>
@@ -39,23 +38,36 @@
             <h1 class="error">Page not found</h1>
             <p>Page "<strong id="query"></strong>" not found</p>
         </section>
+        <aside id="cart-aside">
+            <button class="cart-toggle"><i class="fa fa-close"></i></button>
+            <h2>Shopping Cart</h2>
+            <ul id="cart">
+                <li>No items in cart</li>
+            </ul>
+            <p>Total: $<span id="total">0</span></p>
+            <button onclick="checkout()" class="checkout-button">Checkout</button>
+        </aside>
     </main>
-    <aside id="cart-aside">
-        <h2>Shopping Cart</h2>
-        <ul id="cart">
-            <li>No items in cart</li>
-        </ul>
-        <p>Total: $<span id="total">0</span></p>
-        <button onclick="checkout()">Checkout</button>
-    </aside>
+    <footer>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <ul>
+            <li>Phone number: <a href="tel:+996701250220"> +996 701 250 220</a></li>
+            <li>Email: <a href="mailto:bakhtiiar.tasholotov@alatoo.edu.kg">bakhtiiar.tasholotov@alatoo.edu.kg</a></li>
+            </ul>
+        </section>
+    </footer>
     <script>
         const query = decodeURIComponent(window.location.search.substr(7));
         document.getElementById('query').textContent = query;
     </script>
     <script>
-    $('.cart-toggle').on('click', function() {
-        $('#cart-aside').toggleClass('active');
-    });
+        $('.cart-toggle').on('click', function() {
+            $('#cart-aside').toggleClass('active');
+        });
+        $('.nav-toggle').on('click', function() {
+            $('#navbar').toggleClass('active');
+        });
     </script>
     <script src="scripts/script.js"></script>
     <script src="scripts/cart.js">
